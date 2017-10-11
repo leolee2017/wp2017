@@ -1,0 +1,106 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/564x/2e/af/90/2eaf90e3363adf2cfe2d8f44c559dbea.jpg);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navigation, h3 {
+    text-transform: capitalize;
+}
+
+.navigation li {
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 1.4em;
+    font-size: 25px;
+    color: darkblue;
+    padding: 2px 5px;
+    margin: 0 10px;
+}
+
+.navigation li:hover {
+    color: darkcyan;
+}
+
+.navigation ul {
+    text-align: center;
+}
+
+.navigation {
+    background-color:cornsilk;
+    max-width: 1000px;
+    min-width: 920px;
+    border: 2px solid none;
+    border-radius: 10px;
+    margin: 30px auto 50px auto;
+}
+
+.about {
+    background-color: lightsteelblue;
+    float: right;
+    right: 10px;
+}
+
+.movie {
+    background-color: lightcoral;
+    left: 10px;
+}
+
+.music {
+    background-color: aquamarine;
+    float: right;
+    right: 10px;
+}
+
+.hobbies {
+    background-color: lightskyblue;
+    left: 10px;
+}
+
+.video, img{
+    margin-top: 45px;
+    float: left;
+}
+
+.description {
+    line-height: 1.4;
+    padding: 10px 20px 50px 470px;
+    font-size: 18px;
+}
+
+.movie, .music, .hobbies, .about {
+    height: 350px;
+    width: 900px;
+    position: relative;
+    padding: 10px 20px 10px 60px;
+    border:2px solid black;
+    border-radius: 40px;
+    margin: 0;
+    clear:both;
+}
+
+.content {
+    max-width: 1100px;
+    min-width: 920px;
+    height: 1500px;
+    margin: 0 auto;
+}
+
+.content h3{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.content p{
+    font-size: 20px;
+}
