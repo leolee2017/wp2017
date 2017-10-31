@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Leo's Resume</title>
-        <link href="style.css" type="text/css" rel="stylesheet">
-    </head>
+  <head>
+    <title>Leo's Resume</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  </head>
 
-    <body>
-        <h1 class="header">resume</h1>
-        <nav class="navigation">
-            <ul>
-                <a href="#about"><li>about me</li></a>
-                <a href="#movie"><li>favorite movie</li></a>
-                <a href="#music"><li>favorite song</li></a>
-                <a href="#hobbies"><li>hobbies</li></a>
-            </ul>
-        </nav>
-        <div class="content">
-            <div id="about" class="about">
-                <img src="self-picture.jpg" width="427" height="240">
-                <h3>about me</h3>
-                <div class="description">
-                    <p>My name is Leo and I'm now studying in NCKU EE, recently finding great interest in learning web programming. </p>
-                </div>
-            </div>
-            <div id="movie" class="movie">
-                <iframe class="video" width="427" height="240" src="https://www.youtube.com/embed/7OIFdWk83no" frameborder="0" allowfullscreen></iframe>
-                <h3>favorite movie</h3>
-                <div class="description">
-                    <p>It's a movie about lovers, parents, family and happiness in your life, deeply touching my my heart.</p>
-                </div>
-            </div>
-            <div id="music" class=music>
-                <iframe class="video" width="427" height="240" src="https://www.youtube.com/embed/F9kXstb9FF4" frameborder="0" allowfullscreen></iframe>
-                <h3>favorite song</h3>
-                <div class="description">
-                    <p>Are you overwhelming by the pressure of quizzes and homework? Take a break and enjoy the music.</p>
-                </div>
-            </div>
-            <div id="hobbies" class="hobbies">
-                <img src="afternoon_tea.jpg" width="427" height="240">
-                <h3>hobbies</h3>
-                <div class="description">
-                    <p>I like reading magazines, watching series, listening to music, and enjoy afternoon tea. How about you?</p>
-                </div>
-            </div>
+  <body>
+    <div class="heading">
+      <div class="headingSlide">
+        <h1>resume</h1>
+      </div>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <a href="#about"><li>about me</li></a>
+        <a href="#movie"><li>favorite movie</li></a>
+        <a href="#music"><li>favorite song</li></a>
+        <a href="#hobbies"><li>hobbies</li></a>
+      </ul>
+    </nav>
+    <div class="content">
+      <div id="about" class="about block">
+        <div class="pictureBlock hide">
+          <img src="self-picture.jpg" width="427" height="240">
         </div>
-    </body>
+        <div class="descriptionBlock">
+          <h3>about me</h3>
+          <div class="description">
+            <p>My name is Leo and I'm now <br>studying in NCKU EE, recently <br>finding great interest in learning web <br>programming. </p>
+          </div>
+        </div>
+      </div>
+      <div id="movie" class="movie block">
+        <div class="pictureBlock hide">
+          <iframe class="video" width="427" height="240" src="https://www.youtube.com/embed/7OIFdWk83no" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="descriptionBlock">
+          <h3>favorite movie</h3>
+          <div class="description">
+            <p>It's a movie about lovers, parents, <br>family and happiness in your life, <br>deeply touching my my heart.</p>
+          </div>
+        </div>
+      </div>
+      <div id="music" class="music block">
+        <div class="pictureBlock hide">
+          <iframe class="video" width="427" height="240" src="https://www.youtube.com/embed/F9kXstb9FF4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="descriptionBlock">
+          <h3>favorite song</h3>
+          <div class="description">
+            <p>Are you overwhelming by the <br>pressure of quizzes and homework? <br>Take a break and enjoy the music.</p>
+          </div>
+        </div>
+      </div>
+      <div id="hobbies" class="hobbies block">
+        <div class="pictureBlock hide">
+          <img src="afternoon_tea.jpg" width="427" height="240">
+        </div>
+        <div class="descriptionBlock">
+          <h3>hobbies</h3>
+          <div class="description">
+            <p>I like reading magazines, watching <br>series, listening to music, and enjoy <br>afternoon tea. How about you?</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <form action="/get" method="get">
+      first name: <input name="fname" type="text"><br>
+      last name: <input name="lname" type="text"><br>
+      <button type="submit">submit via get</button>
+    </form>
+
+
+    <button id="ajax_btn">click me</button>
+    <h1 id="ajax_content"></h1>
+    
+    <script type='text/javascript' src='main.js'></script> 
+  </body>
 </html>
+
